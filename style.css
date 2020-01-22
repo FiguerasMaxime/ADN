@@ -1,0 +1,383 @@
+.bg_bl {
+  background-color: #03dac5;
+}
+
+.bg_bd {
+  background-color: #2a3472;
+}
+
+@font-face {
+  font-family: "OpenExtraBold";
+  src: url("./Open_Sans/OpenSans-ExtraBold.ttf");
+}
+@font-face {
+  font-family: "OpenBold";
+  src: url("./Open_Sans/OpenSans-Bold.ttf");
+}
+@font-face {
+  font-family: "OpenSemiBold";
+  src: url("./Open_Sans/OpenSans-SemiBold.ttf");
+}
+.extrabold {
+  font-family: "OpenExtraBold", sans-serif;
+}
+
+.bold {
+  font-family: "OpenBold", sans-serif;
+}
+
+.semibold {
+  font-family: "OpenSemiBold", sans-serif;
+}
+
+.txt_bl {
+  color: #03dac5;
+}
+
+.txt_bd {
+  color: #2a3472;
+}
+
+.txt_wh {
+  color: #fff;
+}
+
+.txt_gr {
+  color: #abb7cc;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fff;
+}
+
+header {
+  position: relative;
+  width: 100vw;
+  height: 700px;
+  background-image: url("./Sources/perspective.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+header .header {
+  width: 100%;
+  height: 150px;
+  z-index: 1;
+}
+header .header nav {
+  height: 100%;
+  padding: 30px 0;
+}
+header .header nav ul {
+  float: right;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 6vw;
+}
+header .header nav ul li {
+  margin: 0 8px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .title-header {
+  position: absolute;
+  bottom: 10%;
+  padding: 0 5vw;
+}
+header .title-header h1 span {
+  font-size: 47px;
+  line-height: 74px;
+  color: #2a3472;
+  padding: 5px 12px;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+header .box {
+  position: absolute;
+  top: 100%;
+  right: 15%;
+  transform: translateX(-50%) translateY(-50%);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #2a3472;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .box:before {
+  content: url("./Sources/enveloppe.svg");
+  width: 23px;
+  height: 23px;
+}
+header .box:after {
+  position: absolute;
+  content: "";
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #2a3472;
+  opacity: 0.2;
+  z-index: -1;
+}
+
+h2 {
+  font-size: 34px;
+}
+
+h3 {
+  text-transform: uppercase;
+  font-size: 24px;
+}
+
+.contact, .container .plan {
+  padding: 5px 20px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact .phone, .container .plan .phone {
+  display: flex;
+  align-items: center;
+  padding-right: 15px;
+}
+.contact .phone img, .container .plan .phone img {
+  width: 20px;
+  height: auto;
+  margin: auto;
+}
+.contact .txt, .container .plan .txt {
+  text-align: center;
+}
+.contact .txt p, .container .plan .txt p {
+  font-size: 11px;
+  margin-right: 20px;
+}
+
+.roll {
+  width: 100vw;
+  height: 300px;
+}
+.roll .central {
+  text-align: center;
+  padding: 60px 25vw;
+}
+.roll .central p {
+  font-size: 34px;
+  display: block;
+}
+
+section {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 800px;
+  background-color: #03dac5;
+}
+section form {
+  position: relative;
+  width: 40%;
+  height: 120%;
+  background-color: #fff;
+  box-shadow: 0px 1px 6px 2px rgba(171, 183, 204, 0.74);
+  padding: 50px;
+  border-bottom-left-radius: 50px;
+}
+section form h2 {
+  padding: 5%;
+}
+section .container {
+  width: 40%;
+  height: 100%;
+  padding: 7vh 3vw;
+}
+
+.form {
+  width: 100%;
+  height: 100%;
+}
+.form_civi {
+  display: flex;
+  flex-direction: column;
+}
+.form_civi_label {
+  color: #abb7cc;
+  font-size: 14px;
+  padding: 0 30px;
+}
+.form_civi .choice {
+  display: flex;
+  padding: 3px 0;
+}
+.form_civi .choice_decision {
+  padding-left: 30px;
+}
+.form_civi .choice_decision .label {
+  font-size: 18px;
+  color: #abb7cc;
+}
+.form_groups {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.form_groups .group {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+}
+.form_groups .group label {
+  padding-left: 30px;
+}
+.form_groups .group input {
+  padding: 10px;
+  border: 2px solid #abb7cc;
+}
+.form_email {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+.form_email label {
+  padding-left: 30px;
+}
+.form_email input {
+  padding: 10px;
+  border: 2px solid #abb7cc;
+}
+.form_choice2 {
+  display: flex;
+  padding: 3px 0;
+}
+.form_choice2 .decision {
+  padding-left: 30px;
+}
+.form_choice2 .decision .label {
+  font-size: 18px;
+  color: #abb7cc;
+}
+
+input {
+  font-size: 18px;
+}
+input .checkbox {
+  border: 2px solid #abb7cc;
+}
+
+textarea {
+  font-size: 18px;
+  margin-top: 10px;
+  width: 100%;
+  min-height: 15%;
+  padding: 10px;
+  border: 2px solid #abb7cc;
+}
+
+.rgpd {
+  display: flex;
+}
+.rgpd input {
+  margin: 3px 10px 0 30px;
+}
+
+.submit {
+  margin-top: 5%;
+  float: right;
+}
+.submit .action {
+  text-decoration: none;
+  display: flex;
+  background-color: #2a3472;
+  color: #fff;
+  padding: 15px 30px;
+}
+.submit .action p {
+  margin-right: 20px;
+  font-size: 22px;
+}
+.submit .action .fleche {
+  width: 15px;
+  height: 15px;
+  margin-left: 20px;
+  margin-top: 5px;
+}
+
+.mentions {
+  position: relative;
+  bottom: -13%;
+}
+.mentions p {
+  font-size: 10px;
+}
+
+.container .localisation {
+  width: 40px;
+  height: auto;
+}
+.container .infos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container .infos .p {
+  font-size: 22px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+.container .plan {
+  margin-top: 25%;
+  background-color: #2a3472;
+  float: left;
+  justify-content: space-between;
+  font-size: 24px;
+}
+.container .plan p {
+  padding: 0 1vw;
+  text-transform: uppercase;
+}
+.container .plan .voir {
+  margin-left: 2vw;
+  width: 25px;
+  height: auto;
+}
+
+.transports {
+  display: flex;
+  width: 100%;
+}
+.transports .car, .transports .train {
+  padding-top: 8vh;
+  width: 50%;
+}
+.transports .car img, .transports .train img {
+  width: auto;
+  height: 50px;
+}
+.transports .car h4, .transports .train h4 {
+  margin-top: 10px;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+.transports .car p, .transports .train p {
+  margin-top: 15px;
+  font-size: 14px;
+  padding-right: 15%;
+}
+.div {
+  width: 100vw;
+  height: 300px;
+}
+
+/*# sourceMappingURL=style.css.map */

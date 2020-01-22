@@ -1,0 +1,391 @@
+@import "bg_fond.scss";
+@import "font.scss";
+@import "txt_color.scss";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fff;
+} 
+
+header {
+    position: relative;
+    width: 100vw;
+    height: 700px;
+    background-image: url('./Sources/perspective.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    .header {
+       width: 100%;
+       height: 150px;
+       z-index: 1;
+
+       nav {
+           height: 100%;
+           padding: 30px 0;
+
+           ul {
+               float: right;
+               list-style: none;
+               display: flex;
+               justify-content: center;
+               align-items: center;
+               margin-right: 6vw;
+
+               li {
+                margin: 0 8px;
+                height: 60px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+               }
+           }
+       }
+    }  
+    
+    .title-header {
+        position: absolute;
+        bottom: 10%;
+        padding: 0 5vw;
+        h1 span{
+            font-size: 47px;
+            line-height: 74px;
+            color: #2a3472;
+            padding: 5px 12px;
+            background-color: rgba(255, 255, 255, 0.8);
+        }
+    }
+
+    .box {
+        position: absolute;
+        top: 100%;
+        right: 15%;
+        transform: translateX(-50%) translateY(-50%);
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: #2a3472;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &:before {
+            content: url("./Sources/enveloppe.svg");
+            width: 23px;
+            height: 23px;
+        }
+
+        &:after {
+            position: absolute;
+            content: "";
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background-color: #2a3472;
+            opacity: 0.2;
+            z-index: -1;
+        }
+    }
+}
+
+h2{
+    font-size: 34px;
+}
+
+h3 {
+    text-transform: uppercase;
+    font-size: 24px;
+
+}
+
+.contact {
+    padding: 5px 20px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    .phone {
+        display: flex;
+        align-items: center;
+        padding-right: 15px;
+        img {
+            width: 20px;
+            height: auto;
+            margin: auto;
+        }
+    }
+
+    .txt {
+        text-align: center;
+        p {
+            font-size: 11px;
+            margin-right: 20px;
+        }
+    }
+}
+
+.roll {
+    width: 100vw;
+    height: 300px;
+    .central {
+        text-align: center;
+        padding: 60px 25vw;
+
+        p{
+            font-size: 34px;
+            display: block;
+        }
+    }
+}
+
+section {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 800px;
+    background-color: #03dac5;
+
+    form{
+        position: relative;
+        width: 40%;
+        height: 120%;
+        background-color: #fff;
+        box-shadow: 0px 1px 6px 2px rgba(171,183,204,0.74);
+        padding: 50px;
+
+        border-bottom-left-radius: 50px;
+
+        h2 {
+            padding: 5%;
+        }
+    }
+
+    .container {
+        width: 40%;
+        height: 100%;
+        padding: 7vh 3vw;
+
+    }
+}
+
+.form{
+    width: 100%;
+    height: 100%;
+
+    &_civi {
+        display: flex;
+        flex-direction: column;
+
+        &_label {
+            color: #abb7cc;
+            font-size: 14px;
+            padding: 0 30px;
+        }
+
+        .choice {
+            display: flex;
+            padding: 3px 0;
+
+            &_decision{
+                padding-left: 30px;
+
+                .label {
+                    font-size: 18px;
+                    color: #abb7cc;
+                }
+            }
+        }
+    }
+
+    &_groups {
+        margin-top: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .group{
+            width: 45%;
+            display: flex;
+            flex-direction: column;
+
+            label {
+                padding-left: 30px;
+            }
+            
+            input {
+                padding: 10px;
+                border: 2px solid #abb7cc;
+            }
+        }
+    }
+
+
+    &_email{
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+
+        label {
+            padding-left: 30px;
+        }
+
+        input {
+            padding: 10px;
+            border: 2px solid #abb7cc;
+        }
+    }
+
+    &_choice2 {
+        display: flex;
+        padding: 3px 0;
+
+        .decision{
+            padding-left: 30px;
+
+            .label {
+                font-size: 18px;
+                color: #abb7cc;
+            }
+        }
+    }
+}
+
+input {
+    font-size: 18px;
+
+    .checkbox {
+        border: 2px solid #abb7cc;
+    }
+}
+
+
+textarea {
+    font-size: 18px;
+    margin-top: 10px;
+    width: 100%;
+    min-height: 15%;
+    padding: 10px;
+    border: 2px solid #abb7cc;
+}
+
+.rgpd {
+    display: flex;
+
+    input {
+        margin: 3px 10px 0 30px;
+    }
+
+}
+
+.submit {
+    margin-top: 5%;
+    float: right;
+    .action {
+        text-decoration: none;
+        display: flex;
+        background-color: #2a3472;
+        color: #fff;
+        padding: 15px 30px;
+
+        p {
+            margin-right: 20px;
+            font-size: 22px;
+        }
+    
+        .fleche {
+            width: 15px;
+            height: 15px;
+            margin-left: 20px;
+            margin-top: 5px;
+        }
+    }
+}
+
+.mentions {
+    position: relative;
+    bottom: -13%;
+    p {
+        font-size: 10px;
+    }
+}
+
+
+.container {
+
+    .localisation {
+        width: 40px;
+        height: auto;
+    }
+
+    .infos {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .p {
+            font-size: 22px;
+            line-height: 30px;
+            text-transform: uppercase;
+        }
+    }
+
+    .plan {
+        margin-top: 25%;
+        @extend .contact;
+        background-color: #2a3472;
+        float: left;
+        justify-content: space-between;
+        font-size: 24px;
+        
+        p{
+            padding: 0 1vw;
+            text-transform: uppercase;
+        }
+
+        .voir {
+            margin-left: 2vw;
+            width: 25px;
+            height: auto;;
+        }
+    }
+}
+
+.transports {
+    display: flex;
+    width: 100%;
+
+    .car {
+        padding-top: 8vh;
+        width: 50%;
+        img{
+            width: auto;
+            height: 50px;
+        }
+        h4{
+            margin-top: 10px;
+            text-transform: uppercase;
+            font-size: 18px;
+        }
+        p{
+            margin-top: 15px;
+            font-size: 14px;
+            padding-right: 15%;
+        }
+    }
+
+    .train{
+        @extend .car;
+    }
+}
+
+.div {
+    width: 100vw;
+    height: 300px;
+}

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Test SASS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <header>
+            <div class="header">
+                <nav>
+                    <ul>
+                        <li class="bg_bl">
+                            <div class="contact">
+                                <h3 class="bold">être rappelé</h3>
+                            </div>
+                        </li>
+                        <li class="bg_bd">
+                            <div class="contact">
+                                <div class="phone">
+                                    <img src="./Sources/telephone.svg" alt="phone_img">
+                                </div>
+                                <div class="txt">
+                                    <h3 class="bold">01 46 53 21 23</h3>
+                                    <p class="semibold">Appel gratuit 7j/7</p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="title-header">
+                <h1 class="extrabold">
+                    <span>Prochainement</span> <br> <span>à Colombes</span>
+                </h1>
+            </div>
+            <div class="box"></div>
+        </header>
+
+        <div class="roll">
+            <div class="central">
+                <h2 class="txt_bd extrabold">Une nouvelle qualité de vie à Colombes</h2>
+                <h2 class="bg_bl txt_wh extrabold">du 2 pièces au 5 pièces à partir de 232 000 €*</h2>
+            </div>
+        </div>
+
+        <section>
+            <form action="#">
+                <h2 class="txt_bd extrabold">Contactez nous <br>et découvrez nos plans </h2>
+
+                <div class="form_civi">
+                    <label for="" class="form_civi_label semibold">Civilité *</label>
+                    <div class="choice">
+                        <div class="choice_decision">
+                            <input type="checkbox" class="checkbox">
+                            <label for="" class="label bold">Madame</label>
+                        </div>
+                        <div class="choice_decision">
+                            <input type="checkbox" class="checkbox">
+                            <label for="" class="label bold">Monsieur</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form_groups">
+                    <div class="group">
+                        <label for="" class="txt_gr semibold">Nom *</label>
+                        <input type="text" placeholder="Votre nom" class="txt_gr semibold">
+                    </div>
+                    <div class="group">
+                        <label for="" class="txt_gr semibold">Prénom *</label>
+                        <input type="text" placeholder="Votre prénom" class="txt_gr semibold">
+                    </div>
+                </div>
+                <div class="form_email">
+                    <label for="" class="txt_gr semibold">Email *</label>
+                    <input type="text" placeholder="Votre email" class="txt_gr semibold">
+                </div>
+                <div class="form_groups">
+                    <div class="group">
+                        <label for="" class="txt_gr semibold">Téléphone *</label>
+                        <input type="text" placeholder="Votre nom" class="txt_gr semibold">
+                    </div>
+                    <div class="group">
+                        <label for="" class="txt_gr semibold">Code postal *</label>
+                        <input type="text" placeholder="Votre prénom" class="txt_gr semibold">
+                    </div>
+                </div>
+                <div class="form_choice2">
+                    <div class="decision">
+                        <input type="checkbox" class="checkbox">
+                        <label for="" class="label bold">Pour habiter</label>
+                    </div>
+                    <div class="decision">
+                        <input type="checkbox" class="checkbox">
+                        <label for="" class="label bold">Pour investir</label>
+                    </div>
+                </div>
+                <textarea name="" class="txt_gr semibold" placeholder="Votre message"></textarea>
+                <div class="rgpd">
+                    <input type="checkbox">
+                    <p class="semibold txt_bd">En cochant cette case j’accepte de recevoir des offres commerciales et
+                        informations par email,
+                        téléphone et sms sur les produits et services de Sogeprom et affirme avoir pris connaissance
+                        de la <a href="#">politique de protection des données personnelles de Sogeprom.</a></p>
+                </div>
+                <div class="submit">
+                    <a href="#" type="submit" class="action">
+                        <p class="semibold">Envoyer</p>
+                        <img class="fleche" src="./Sources/fleche.svg" alt="fleche">
+                    </a>
+                </div>
+                <div class="mentions">
+                    <p class="txt_gr semibold">* Champs obligatoires</p>
+                </div>
+            </form>
+            <div class="container">
+                <img src="./Sources/localisation.svg" alt="localisation" class="localisation">
+                <div class="infos">
+                    <p class="txt_bd extrabold p">Renseignements<br>sur rendez-vous</p>
+                    <div class="contact bg_bd">
+                        <div class="phone">
+                            <img src="./Sources/telephone.svg" alt="phone_img">
+                        </div>
+                        <div class="txt">
+                            <h3 class="bold">01 46 53 21 23</h3>
+                            <p class="semibold">Appel gratuit 7j/7</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="plan">
+                    <p class="txt_wh bold">Découvrir le plan masse</p>
+                    <img src="./Sources/voir.svg" alt="voir" class="voir">
+                </div>
+
+                <div class="transports">
+                    <div class="car">
+                        <img src="./Sources/voiture.svg" alt="voiture">
+                        <h4 class="extrabold txt_bd">Accès en voiture</h4>
+                        <p class="semibold txt_wh">À 5 min de l’A86 et de l’A15. <br>
+                            Accès à l’aéroport Roissy Ch. de Gaulle par l’A104 puis D212.
+                        </p>
+                    </div>
+                    <div class="train">
+                        <img src="./Sources/train.svg" alt="train">
+                        <h4 class="extrabold txt_bd">Transports en commum</h4>
+                        <p class="semibold txt_wh">En bus Lignes 176 et 276, vers la Z.I. Kléber, le centre-ville de Colombes, Neuilly-sur-Seine ou La Défense, arrêt "Valmy-Gambetta" à 200 mètres. </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="div"></div>
+    </main>
+</body>
+
+</html>
